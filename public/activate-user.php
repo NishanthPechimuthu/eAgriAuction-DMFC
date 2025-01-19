@@ -26,13 +26,13 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["email"])){
       $mail->isSMTP(); // Set mailer to use SMTP
       $mail->Host = 'smtp.gmail.com'; // SMTP server
       $mail->SMTPAuth = true; // Enable SMTP authentication
-      $mail->Username = '22ct19nishanth@gmail.com'; // Gmail address
-      $mail->Password = 'aynqaraezfiltmwh'; // Gmail app password
+      $mail->Username = 'eagri.ct.ws@gmail.com'; // Gmail address
+      $mail->Password = 'xnfkhjazsdjlsrsg'; // Gmail app password
       $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Encryption protocol
       $mail->Port = 587; // TCP port for Gmail
   
       // Sender and recipient settings
-      $mail->setFrom('22ct19nishanth@gmail.com', 'no-reply@22ct19.free.nf'); // Sender email and name
+      $mail->setFrom('eagri.ct.ws@gmail.com', 'eAgri Auction'); // Sender email and name
       $mail->addAddress($email); // Recipient email from form
   
       // Email content

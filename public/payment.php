@@ -110,13 +110,13 @@ $trans = getInvoiceDetails($sUserId, $auction_id, $highest_bid);
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = '22ct19nishanth@gmail.com'; // Your Gmail address
-        $mail->Password = 'aynqaraezfiltmwh'; // Your Gmail app password
+        $mail->Username = 'eagri.ct.ws@gmail.com'; // Your Gmail address
+        $mail->Password = 'xnfkhjazsdjlsrsg'; // Your Gmail app password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
         // Sender and recipient settings
-        $mail->setFrom('22ct19nishanth@gmail.com', 'no-replay@eagri.ct.ws');
+        $mail->setFrom('eagri.ct.ws@gmail.com', 'eAgri Auction');
         $mail->addAddress($rUser["userEmail"]); // Recipient email
 
         // Email content
@@ -261,13 +261,13 @@ $trans = getInvoiceDetails($sUserId, $auction_id, $highest_bid);
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = '22ct19nishanth@gmail.com'; // Your Gmail address
-        $mail->Password = 'aynqaraezfiltmwh'; // Your Gmail app password
+        $mail->Username = 'eagri.ct.ws@gmail.com'; // Your Gmail address
+        $mail->Password = 'xnfkhjazsdjlsrsg'; // Your Gmail app password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
         // Sender and recipient settings
-        $mail->setFrom('22ct19nishanth@gmail.com', 'no-replay@eagri.ct.ws');
+        $mail->setFrom('eagri.ct.ws@gmail.com', 'eAgri Auction');
         $mail->addAddress($sUser["userEmail"]); // Recipient email
 
         // Email content

@@ -27,6 +27,7 @@ $auctions = getActiveAuctions();
       </div>
       <div class="card-body">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          hello
           <?php foreach ($auctions as $auction): ?>
           <div class="col mb-4">
             <div class="card shadow">
