@@ -42,7 +42,7 @@
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
           <h5 class="text-uppercase mb-4 font-weight-bold text-success">Contact</h5>
           <p><i class="fas fa-home mr-3"></i>&nbsp;&nbsp;<a class="text-decoration-none text-white"  href="https://www.google.com/maps/dir/?api=1&destination=M6H6%2B5F9%2C+Somavarapatti%2C+Tamil+Nadu">Tiruppur, Tamil Nadu, India - 642205</a></p>
-          <p><i class="fas fa-envelope mr-3"></i>&nbsp;&nbsp;<a class="text-decoration-none text-white" href="mailto:nishanthpechimuthu@gmail.com">nishanthpechimuthu@gmail.com</a></p>
+          <p><i class="fas fa-envelope mr-3"></i>&nbsp;&nbsp;<a class="text-decoration-none text-white" href="mailto:eagri.ct.ws@gmail.com">eagri.ct.ws@gmail.com</a></p>
           <p><i class="fas fa-phone mr-3"></i>&nbsp;&nbsp;<a class="text-decoration-none text-white" href="tel:+918015864344">+91 8015864344</a></p>
         </div>
       </div>
@@ -50,8 +50,8 @@
       <div class="row justify-content-start align-items-center">
         <div class="col-md-7 col-lg-8">
           <p>Copyright &copy; 2024 - 2025 All rights reserved by:
-            <a href="mailto:nishanthpechimuthu@gmail.com" style="text-decoration: none;">
-              <strong class="text-success">Nishanth Pechimuthu</strong>
+            <a href="mailto:eagri.ct.ws@gmail.com" style="text-decoration: none;">
+              <strong class="text-success">eAgri[NSCBG]</strong>
             </a>
           </p>
         </div>

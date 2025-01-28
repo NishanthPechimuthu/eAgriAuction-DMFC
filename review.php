@@ -134,7 +134,7 @@ $reviews = getReviews();
                 foreach ($reviews as $review) {
                     ?>
                     <div class="custom-carousel-item">
-                        <img src="../auction-app/images/profiles/<?= htmlspecialchars(getUserImage($review['reviewUserId'])); ?>" alt="User Image">
+                        <img src="./images/profiles/<?= htmlspecialchars(getUserImage($review['reviewUserId'])); ?>" alt="User Image">
                         <div>
                             <h2 class="text-center"><?= getUserFullName($review['reviewUserId'])?></h2>
                             <h5 class="text-center text-secondary"><?='@'. getUserName($review['reviewUserId'])?></h5>

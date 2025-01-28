@@ -19,14 +19,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = '22ct19nishanth@gmail.com'; // Your email
-        $mail->Password = 'aynqaraezfiltmwh'; // Your app password
+        $mail->Username = 'eagri.ct.ws@gmail.com'; // Your email
+        $mail->Password = 'xnfkhjazsdjlsrsg'; // Your app password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
         // Email settings
-        $mail->setFrom('22ct19nishanth@gmail.com', 'eAgriAuction Support');
-        $mail->addAddress('nishanthpechimuthu@gmail.com'); // Your email to receive messages
+        $mail->setFrom('eagri.ct.ws@gmail.com', 'eAgriAuction Support');
+        $mail->addAddress('22ct19nishanth@gmail.com'); // Your email to receive messages
         $mail->addReplyTo($email, $fullName);
 
         $mail->isHTML(true);
@@ -81,3 +81,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 }
 ?>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <?php include("./assets/link.html"); ?>
+    <link rel="stylesheet" href="./assets/css/home-style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+</head>
+</html>

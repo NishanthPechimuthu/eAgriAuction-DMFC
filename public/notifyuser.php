@@ -32,6 +32,9 @@ if (file_exists($jsonFile)) {
 }
 
 try {
+    // Get current date
+    $currentDate = date('Y-m-d H:i:s');
+
     // SQL Query to fetch matching auctions
     $query = "
         SELECT i.interestUserId AS userId, 
@@ -42,7 +45,8 @@ try {
                a.auctionId, 
                a.auctionTitle, 
                a.auctionDescription, 
-               a.auctionEndDate 
+               a.auctionEndDate,
+               a.auctionStartDate
         FROM interests i
         JOIN users u ON i.interestUserId = u.userId
         JOIN categories c ON i.interestCategoryId = c.categoryId
@@ -54,9 +58,12 @@ try {
               OR i.interestKeywords = '' 
               OR a.auctionTitle LIKE CONCAT('%', i.interestKeywords, '%')
           )
+          AND a.auctionStartDate <= :currentDate
+          AND a.auctionEndDate >= :currentDate
     ";
 
-    $stmt = $pdo->query($query);
+    $stmt = $pdo->prepare($query);
+    $stmt->execute(['currentDate' => $currentDate]);
     $notifications = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     // Group notifications by user
@@ -157,3 +164,4 @@ try {
 } catch (Exception $e) {
     echo "Error: {$e->getMessage()}<br>";
 }
+?>
